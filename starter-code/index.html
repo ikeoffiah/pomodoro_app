@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Frontend Mentor | Pomodoro app</title>
+</head>
+<body>
+  <div class="container">
+    <div class="main">
+      <div class="pomdoro-title">promodoro</div>
+      <div class="promodoro-buttons">
+        <button class="pomodoro active" id="pomodoro"  data-mode="pomodoro" onclick="change(this)">pomodoro</button>
+        <button class="shortbreak button" id="shortbreak" name="shortbreak" onclick="change(this)">short break</button>
+        <button class="longbreak button" id="longbreak" data-mode="longbreak" onclick="change(this)">long break</button>
+      </div>
+      <div class="outside-progressbar">
+        <div class="progress-bar">
+          <div class="inner-bar">
+            <div class="inner-most">
+              <div class="inside">
+                <div class="clock">
+                  <span id="min">25</span>
+                  <span id="seperator">:</span>
+                  <span id="sec">00</span>
+                </div>
+                <button class="sub-text" onclick="clickStart()" id="start">START</button>
+                <button class="sub-text closed" onclick="clickPause()" id="pause">PAUSE</button>
+                <button class="sub-text closed" onclick="clickContinue()" id="continue">CONTINUE</button>
+                <button class="sub-text closed" onclick="clickReStart()" id="restart">RESTART</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="settings">
+        <img src="./assets/icon-settings.svg" alt="settings-icon" />
+      </div>
+    </div>
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>

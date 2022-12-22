@@ -1,0 +1,151 @@
+@font-face {
+    font-family: "KumbhSans-Bold";
+    src: url("./typefont/KumbhSans-Bold.ttf");
+}
+
+
+
+
+
+
+
+
+/* root */
+:root{
+    --primary-color: #1E213F;
+    --secondary-color: #161932;
+    --text-color-white: #ffffff;
+    --orange-color: #F87070;
+    --shaded-text: #D7E0FF;
+}
+
+
+/* General */
+
+body{
+    background-color: var(--primary-color);
+}
+
+/* pomodoro-ui */
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+
+.pomdoro-title{
+    font-family: "KumbhSans-Bold";
+    font-size: 32px;
+    color: var(--text-color-white);
+}
+
+.promodoro-buttons{
+    display: flex;
+    width: 375px;
+    height: 63px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 87px;
+    background-color: var(--secondary-color);
+    border-radius: 31.5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    font-size: 14px;
+}
+
+.active{
+    width: 120px;
+    height: 48px;
+    background-color: var(--orange-color);
+    font-family: "KumbhSans-Bold";
+    border-radius: 26.5px;
+    color: var(--primary-color);
+    border:none;
+}
+
+.button{
+    width: 120px;
+    height: 48px;
+    
+    border: none;
+    font-family: "KumbhSans-Bold";
+    color: var(--shaded-text);
+    background: none;
+}
+
+.progress-bar{
+    margin-top: 132px;
+    margin-bottom: 63px;
+    height: 410px;
+    width: 410px;
+    border-radius: 50%;
+    background-color: var(--primary-color);  
+    box-shadow: 0 -5px 3px -3px #ffffff, 0 5px 3px -3px #ffffff, 0 5px 3px -3px #ffffff, 0 5px 3px -3px #ffffff;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+
+.closed{
+    display:none;
+}
+
+.inner-bar{
+    height: 366px;
+    width: 366px;
+    background-color: var(--secondary-color); 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-most{
+    height: 339px;
+    width: 339px;
+    border-radius: 50%;
+    background-color: var(--orange-color); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inside{
+    height: 312px;
+    width: 312px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--secondary-color); 
+    align-items: center;
+}
+
+
+
+.sub-text{
+    font-family: "KumbhSans-Bold";
+    font-size: 16px;
+    color: var(--shaded-text);
+    letter-spacing: 15px;
+    text-align: center;
+    border: none;
+    background: none;
+}
+
+
+.clock{
+    display: flex;
+    font-family: "KumbhSans-Bold";
+    font-size: 100px;
+    color: var(--shaded-text);
+    letter-spacing: -5px;
+    text-align: center;
+}
+
